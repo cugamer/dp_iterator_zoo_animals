@@ -1,11 +1,11 @@
 package dp_iterator_zoo_animals;
 
-public class AustralianAnimals {
+public class Kangaroos {
 	static final int MAX_ANIMALS = 5;
 	int numberOfAnimals = 0;
 	Animal[] animals;
 	
-	public AustralianAnimals(){}
+	public Kangaroos(){}
 
 	public void addAnimal(String name, String latinName, String description, int age, double weight){
 		if(numberOfAnimals >= MAX_ANIMALS){
@@ -17,7 +17,7 @@ public class AustralianAnimals {
 		}
 	}
 	
-	public Animal[] getAnimals(){
-		return animals;
+	public Iterator createIterator(){
+		return new KangarooIterator(animals);
 	}
 }

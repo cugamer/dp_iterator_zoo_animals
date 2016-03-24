@@ -1,10 +1,10 @@
 package dp_iterator_zoo_animals;
 
-public class AustralianAnimalIterator implements Iterator {
+public class KangarooIterator implements Iterator {
 	Animal[] animals;
 	int position = 0;
 	
-	public AustralianAnimalIterator(Animal[] animals){
+	public KangarooIterator(Animal[] animals){
 		this.animals = animals;
 	}
 

@@ -2,11 +2,11 @@ package dp_iterator_zoo_animals;
 
 import java.util.LinkedList;
 
-public class SeaAnimalIterator implements Iterator {
+public class OtterIterator implements Iterator {
 	LinkedList<Animal> animals;
 	int position = 0;
 	
-	public SeaAnimalIterator(LinkedList<Animal> animals){
+	public OtterIterator(LinkedList<Animal> animals){
 		this.animals = animals;
 	}
 	
