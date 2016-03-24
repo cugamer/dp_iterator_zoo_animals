@@ -18,11 +18,9 @@ public class SeaAnimalIterator implements Iterator {
 		}
 	}
 
-	@Override
 	public Animal next() {
 		Animal animal = animals.get(position);
 		position = position + 1;
 		return animal;
 	}
-
 }

@@ -2,17 +2,17 @@ package dp_iterator_zoo_animals;
 
 import java.util.LinkedList;
 
-public class SeaAnimals {
+public class ListAnimals {
 	LinkedList<Animal> animals = new LinkedList<>();
 	
-	public SeaAnimals(){}
+	public ListAnimals(){}
 	
 	public void addAnimal(String name, String latinName, String description, int age, double weight){
 		Animal animal = new Animal(name, latinName, description, age, weight);
 		animals.add(animal);
 	}
 	
-	public LinkedList<Animal> getAnimals(){
-		return animals;
+	public Iterator createIterator(){
+		return new SeaAnimalIterator(animals);
 	}
 }
