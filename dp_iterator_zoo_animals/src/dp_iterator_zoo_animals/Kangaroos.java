@@ -1,9 +1,9 @@
 package dp_iterator_zoo_animals;
 
 public class Kangaroos {
-	static final int MAX_ANIMALS = 5;
-	int numberOfAnimals = 0;
-	Animal[] animals;
+	private static final int MAX_ANIMALS = 5;
+	private int numberOfAnimals = 0;
+	Animal[] animals = new Animal[MAX_ANIMALS];
 	
 	public Kangaroos(){}
 
