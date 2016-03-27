@@ -1,4 +1,5 @@
 package dp_iterator_zoo_animals;
+import java.util.Iterator;
 
 import java.util.LinkedList;
 
@@ -12,7 +13,7 @@ public class Otters {
 		animals.add(animal);
 	}
 	
-	public Iterator createIterator(){
-		return new OtterIterator(animals);
+	public Iterator<Animal> createIterator(){
+		return animals.iterator();
 	}
 }

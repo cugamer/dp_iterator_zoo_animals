@@ -1,4 +1,6 @@
 package dp_iterator_zoo_animals;
+import java.util.Iterator;
+
 
 public class Kangaroos {
 	private static final int MAX_ANIMALS = 5;
@@ -17,7 +19,7 @@ public class Kangaroos {
 		}
 	}
 	
-	public Iterator createIterator(){
+	public Iterator<Animal> createIterator(){
 		return new KangarooIterator(animals);
 	}
 }
