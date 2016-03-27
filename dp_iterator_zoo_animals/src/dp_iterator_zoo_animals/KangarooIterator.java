@@ -1,7 +1,7 @@
 package dp_iterator_zoo_animals;
 import java.util.Iterator;
 
-public class KangarooIterator implements Iterator {
+public class KangarooIterator implements Iterator<Animal> {
 	Animal[] animals;
 	int position = 0;
 	

@@ -3,7 +3,7 @@ import java.util.Iterator;
 
 import java.util.LinkedList;
 
-public class Otters {
+public class Otters implements AnimalGroup {
 	LinkedList<Animal> animals = new LinkedList<>();
 	
 	public Otters(){}

@@ -2,7 +2,7 @@ package dp_iterator_zoo_animals;
 import java.util.Iterator;
 
 
-public class Kangaroos {
+public class Kangaroos implements AnimalGroup {
 	private static final int MAX_ANIMALS = 5;
 	private int numberOfAnimals = 0;
 	Animal[] animals = new Animal[MAX_ANIMALS];

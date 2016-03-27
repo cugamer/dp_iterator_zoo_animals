@@ -32,7 +32,7 @@ public class AnimalListing {
 		listAnimals(kangarooIterator);
 	}
 	
-	private void listAnimals(Iterator iterator){
+	private void listAnimals(Iterator<Animal> iterator){
 		while(iterator.hasNext()){
 			Animal animal = (Animal)iterator.next();
 			System.out.println(animal.name + ", " + animal.latinName + ", " + animal.weight + " years old, " + animal.weight + " kilograms.");
