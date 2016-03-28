@@ -1,19 +1,20 @@
 package dp_iterator_zoo_animals;
+
+import java.util.HashMap;
 import java.util.Iterator;
 
-import java.util.LinkedList;
+public class PolarBears implements AnimalGroup {
 
-public class Otters implements AnimalGroup {
-	LinkedList<Animal> animals = new LinkedList<>();
+	HashMap<String, Animal> animals = new HashMap<>();
 	
-	public Otters(){}
+	public PolarBears(){}
 	
 	public void addAnimal(String name, String latinName, String description, int age, double weight){
 		Animal animal = new Animal(name, latinName, description, age, weight);
-		animals.add(animal);
+		animals.put(animal.name, animal);
 	}
 	
 	public Iterator createIterator(){
-		return animals.iterator();
+		return animals.values().iterator();
 	}
 }

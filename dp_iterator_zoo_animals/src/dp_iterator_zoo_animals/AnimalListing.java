@@ -5,6 +5,7 @@ import java.util.Iterator;
 public class AnimalListing {
 	private Otters otters;
 	private Kangaroos kangaroos;
+	private PolarBears polarBears;
 	
 	public AnimalListing() {
 		otters = new Otters();
@@ -21,15 +22,23 @@ public class AnimalListing {
 		kangaroos.addAnimal("Pam", "Macropus fuliginosus", "Dolphin girl", 35, 100);
 		kangaroos.addAnimal("Krieger", "Macropus fuliginosus", "Why do you speak Portuguese?", 35, 85);
 		kangaroos.addAnimal("Krieger", "Macropus fuliginosus", "Not gonna fit", 35, 85);
+		
+		polarBears = new PolarBears();
+		polarBears.addAnimal("Meatwad", "Ursus maritimus", "Make the money see", 2, 60);
+		polarBears.addAnimal("Frylock", "Ursus maritimus", "On top rockin' like a cop", 54, 90);
+		polarBears.addAnimal("Shake", "Ursus maritimus", "The mike rulla, the old schoola", 15, 110);
 	}
 	
 	public void listAnimals(){
 		Iterator<Animal> otterIterator = otters.createIterator();
 		Iterator<Animal> kangarooIterator = kangaroos.createIterator();
+		Iterator<Animal> polarBearIterator = polarBears.createIterator();
 		System.out.println("Here are the Otters:");
 		listAnimals(otterIterator);
 		System.out.println("Here are the Kangaroos:");
 		listAnimals(kangarooIterator);
+		System.out.println("And lastly the polar bears");
+		listAnimals(polarBearIterator);
 	}
 	
 	private void listAnimals(Iterator<Animal> iterator){
